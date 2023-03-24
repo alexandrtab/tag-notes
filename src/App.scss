@@ -1,0 +1,64 @@
+@import "./components/dropdown/dropdown.scss";
+@import "./components/todoform/todoform.scss";
+@import "./components/todolist/todolist.scss";
+@import "./components/todolistitem/todolistitem.scss";
+
+* {
+	font-family: "Noto Sans", sans-serif;
+}
+
+body {
+	background: white;
+}
+
+h1 {
+	margin: 32px 0;
+	font-size: 24px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.todo-app {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 500px;
+	min-height: 500px;
+	background: white;
+	text-align: center;
+	margin: 128px auto;
+	border-radius: 5px;
+}
+
+.todo-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.todo-tag {
+	color: rgb(73, 73, 73);
+	font-weight: bold;
+	li{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: rgb(190, 220, 220);
+		border-radius: 20px;
+		padding: 5px;
+		margin-bottom: 10px;
+		button{
+			width: 30px;
+			height: 30px;
+			border: none;
+			border-radius: 50%;
+			cursor: pointer;
+			outline: none;
+			background: rgb(255, 61, 61);
+			color: #fff;
+		}
+	}
+}

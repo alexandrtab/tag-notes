@@ -1,0 +1,34 @@
+.todo {
+	&__form {
+		margin-bottom: 32px;
+	}
+	&__input {
+		padding: 15px 32px 15px 16px;
+		border-radius: 20px 0 0 20px;
+		border: 1px solid #dfe1e5;
+		outline: none;
+		width: 320px;
+		background: transparent;
+		&-edit {
+			border: 2px solid #149fff;
+		}
+	}
+	&__button {
+		padding: 16px;
+		border: none;
+		border-radius: 0 20px 20px 0;
+		cursor: pointer;
+		outline: none;
+		background: rgb(80, 255, 80);
+		color: #fff;
+		text-transform: capitalize;
+		&-edit {
+			background: linear-gradient(
+				90deg,
+				rgba(20, 159, 255, 1) 0%,
+				rgba(17, 122, 255, 1) 100%
+			);
+			padding: 16px 22px;
+		}
+	}
+}
